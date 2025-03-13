@@ -87,7 +87,7 @@ public class WebSecurityConfig {
     @Bean
     public UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:5191", "http://localhost:5173")); // Merged both versions
+        config.setAllowedOrigins(List.of("https://test.greenie.dizzpy.dev", "http://localhost:5173")); // Merged both versions
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         config.setExposedHeaders(List.of("Authorization")); // Allow frontend to read the token
